@@ -1,0 +1,100 @@
+.filter-card {
+  margin-bottom: 16px;
+  
+  .filter-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .active-filters-chip {
+      background-color: #e3f2fd;
+      color: #1976d2;
+      font-size: 11px;
+      height: 20px;
+      padding: 0 8px;
+      margin-left: auto;
+    }
+  }
+}
+
+.filter-form {
+  .filter-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  
+  .date-field {
+    flex: 1;
+    min-width: 160px;
+  }
+  
+  .select-field {
+    flex: 1;
+    min-width: 140px;
+  }
+  
+  .search-field {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  mat-form-field {
+    mat-icon[matSuffix] {
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  
+  button {
+    min-width: 120px;
+    
+    mat-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 600px) {
+  .filter-form .filter-row {
+    flex-direction: column;
+    
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  
+  .filter-actions {
+    justify-content: center;
+    
+    button {
+      width: 100%;
+    }
+  }
+}

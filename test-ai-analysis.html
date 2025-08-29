@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Exception Analysis Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .log-item {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .severity {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .severity.critical { background-color: #dc3545; color: white; }
+        .severity.high { background-color: #fd7e14; color: white; }
+        .severity.medium { background-color: #ffc107; color: black; }
+        .severity.low { background-color: #28a745; color: white; }
+        .priority {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .priority.high { background-color: #dc3545; color: white; }
+        .priority.medium { background-color: #ffc107; color: black; }
+        .priority.low { background-color: #6c757d; color: white; }
+        .error {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .success {
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .loading {
+            text-align: center;
+            color: #007bff;
+            font-style: italic;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 AI Exception Analysis Test</h1>
+    
+    <div class="container">
+        <h2>Send Raw Exception Data for AI Analysis</h2>
+        <form id="exceptionForm">
+            <div class="form-group">
+                <label for="source">Exception Source:</label>
+                <input type="text" id="source" name="source" 
+                       value="CacheService.GetCachedData" 
+                       placeholder="e.g., UserController.Login, OrderService.ProcessPayment">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Exception Message:</label>
+                <input type="text" id="message" name="message" 
+                       value="Unable to connect to the remote server" 
+                       placeholder="e.g., Object reference not set to an instance of an object">
+            </div>
+            
+            <div class="form-group">
+                <label for="stackTrace">Stack Trace:</label>
+                <textarea id="stackTrace" name="stackTrace" 
+                          placeholder="Full stack trace of the exception">   at System.Net.HttpWebRequest.GetResponse()
+   at MyApp.Services.ApiService.MakeRequest(String url) in C:\Source\MyApp\Services\ApiService.cs:line 78
+   at MyApp.Controllers.DataController.FetchExternalData()</textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="context">Additional Context (Optional):</label>
+                <input type="text" id="context" name="context" 
+                       placeholder="e.g., User was trying to load dashboard data">
+            </div>
+            
+            <button type="submit" id="analyzeBtn">🔍 Analyze with AI</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Quick Test Examples</h2>
+        <button onclick="loadExample('nullref')">NullReference Exception</button>
+        <button onclick="loadExample('timeout')">Timeout Exception</button>
+        <button onclick="loadExample('auth')">Authentication Exception</button>
+        <button onclick="loadExample('db')">Database Exception</button>
+    </div>
+
+    <div class="container results" id="results" style="display: none;">
+        <h2>AI Analysis Results</h2>
+        <div id="resultsContent"></div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5160/api';
+        
+        // Example exceptions for quick testing
+        const examples = {
+            nullref: {
+                source: 'UserController.GetProfile',
+                message: 'Object reference not set to an instance of an object',
+                stackTrace: `   at MyApp.Controllers.UserController.GetProfile(Int32 userId) in C:\\Source\\MyApp\\Controllers\\UserController.cs:line 45
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary\`2 parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary\`2 parameters)`,
+                context: 'User profile page load failed'
+            },
+            timeout: {
+                source: 'DatabaseService.ExecuteQuery',
+                message: 'The operation has timed out',
+                stackTrace: `   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler)`,
+                context: 'Large report generation query'
+            },
+            auth: {
+                source: 'AuthenticationService.ValidateToken',
+                message: 'Unauthorized access attempt',
+                stackTrace: `   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler\`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync()`,
+                context: 'Invalid JWT token provided'
+            },
+            db: {
+                source: 'OrderService.CreateOrder',
+                message: 'The connection string property has not been initialized',
+                stackTrace: `   at System.Data.SqlClient.SqlConnection.PermissionDemand()
+   at System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection)`,
+                context: 'Order creation process failed'
+            }
+        };
+
+        function loadExample(type) {
+            const example = examples[type];
+            if (example) {
+                document.getElementById('source').value = example.source;
+                document.getElementById('message').value = example.message;
+                document.getElementById('stackTrace').value = example.stackTrace;
+                document.getElementById('context').value = example.context;
+            }
+        }
+
+        document.getElementById('exceptionForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            const resultsDiv = document.getElementById('results');
+            const resultsContent = document.getElementById('resultsContent');
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const rawException = {
+                source: formData.get('source'),
+                message: formData.get('message'),
+                stackTrace: formData.get('stackTrace'),
+                context: formData.get('context') || null
+            };
+
+            // Validate required fields
+            if (!rawException.source || !rawException.message) {
+                showError('Source and Message are required fields');
+                return;
+            }
+
+            // Show loading state
+            analyzeBtn.disabled = true;
+            analyzeBtn.textContent = '🔄 Analyzing...';
+            resultsDiv.style.display = 'block';
+            resultsContent.innerHTML = '<div class="loading">🤖 AI is analyzing your exception data...</div>';
+
+            try {
+                // Send to AI analysis endpoint
+                const response = await fetch(`${API_BASE_URL}/log/analyze`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify([rawException])
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `HTTP ${response.status}`);
+                }
+
+                const analyzedLogs = await response.json();
+                displayResults(analyzedLogs);
+                
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError(`Analysis failed: ${error.message}`);
+            } finally {
+                // Reset button
+                analyzeBtn.disabled = false;
+                analyzeBtn.textContent = '🔍 Analyze with AI';
+            }
+        });
+
+        function displayResults(logs) {
+            const resultsContent = document.getElementById('resultsContent');
+            
+            if (!logs || logs.length === 0) {
+                resultsContent.innerHTML = '<div class="error">No results returned from analysis</div>';
+                return;
+            }
+
+            let html = '<div class="success">✅ Analysis completed successfully!</div>';
+            
+            logs.forEach((log, index) => {
+                html += `
+                    <div class="log-item">
+                        <h3>Analyzed Exception #${index + 1}</h3>
+                        <p><strong>ID:</strong> ${log.id}</p>
+                        <p><strong>Timestamp:</strong> ${new Date(log.timestamp).toLocaleString()}</p>
+                        <p><strong>Source:</strong> ${log.source}</p>
+                        <p><strong>Message:</strong> ${log.message}</p>
+                        <p>
+                            <strong>Severity:</strong> 
+                            <span class="severity ${log.severity.toLowerCase()}">${log.severity}</span>
+                            <strong>Priority:</strong> 
+                            <span class="priority ${log.priority.toLowerCase()}">${log.priority}</span>
+                        </p>
+                        <p><strong>AI Reasoning:</strong> ${log.aiReasoning || 'No reasoning provided'}</p>
+                        <p><strong>Analyzed:</strong> ${log.isAnalyzed ? '✅ Yes' : '❌ No'}</p>
+                        ${log.analyzedAt ? `<p><strong>Analyzed At:</strong> ${new Date(log.analyzedAt).toLocaleString()}</p>` : ''}
+                        
+                        <details>
+                            <summary><strong>Stack Trace</strong></summary>
+                            <pre>${log.stackTrace || 'No stack trace available'}</pre>
+                        </details>
+                        
+                        <details>
+                            <summary><strong>Full JSON Response</strong></summary>
+                            <pre>${JSON.stringify(log, null, 2)}</pre>
+                        </details>
+                    </div>
+                `;
+            });
+            
+            resultsContent.innerHTML = html;
+        }
+
+        function showError(message) {
+            const resultsContent = document.getElementById('resultsContent');
+            resultsContent.innerHTML = `<div class="error">❌ ${message}</div>`;
+        }
+
+        // Load default example on page load
+        window.addEventListener('load', () => {
+            loadExample('nullref');
+        });
+    </script>
+</body>
+</html>

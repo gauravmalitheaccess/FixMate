@@ -1,0 +1,146 @@
+<div class="ado-story-dialog">
+  <h2 mat-dialog-title>
+    <mat-icon class="dialog-icon">assignment</mat-icon>
+    ADO Story Details
+  </h2>
+
+  <mat-dialog-content class="dialog-content">
+    <mat-tab-group class="dialog-tabs" animationDuration="200ms">
+      
+      <!-- Work Item Details Tab -->
+      <mat-tab label="Work Item Details">
+        <div class="tab-content">
+          
+          <!-- Title Section -->
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-icon mat-card-avatar>title</mat-icon>
+              <mat-card-title>Title</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="field-value">{{ data.title || 'No title provided' }}</p>
+            </mat-card-content>
+          </mat-card>
+
+          <!-- Description Section -->
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-icon mat-card-avatar>description</mat-icon>
+              <mat-card-title>Description</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="field-value description-content">
+                <pre>{{ data.description || 'No description provided' }}</pre>
+              </div>
+            </mat-card-content>
+          </mat-card>
+
+          <!-- Priority and Severity -->
+          <div class="priority-severity-row">
+            <mat-card class="info-card half-width">
+              <mat-card-header>
+                <mat-icon mat-card-avatar>flag</mat-icon>
+                <mat-card-title>Priority</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <mat-chip 
+                  class="priority-chip"
+                  [style.background-color]="getPriorityColor(data.priority)"
+                  [style.color]="'white'">
+                  {{ data.priority || 'Not specified' }}
+                </mat-chip>
+              </mat-card-content>
+            </mat-card>
+
+            <mat-card class="info-card half-width">
+              <mat-card-header>
+                <mat-icon mat-card-avatar>warning</mat-icon>
+                <mat-card-title>Severity</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <mat-chip 
+                  class="severity-chip"
+                  [style.background-color]="getSeverityColor(data.severity)"
+                  [style.color]="'white'">
+                  {{ data.severity || 'Not specified' }}
+                </mat-chip>
+              </mat-card-content>
+            </mat-card>
+          </div>
+
+        </div>
+      </mat-tab>
+
+      <!-- Reproduction Steps Tab -->
+      <mat-tab label="Reproduction Steps">
+        <div class="tab-content">
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-icon mat-card-avatar>list_alt</mat-icon>
+              <mat-card-title>Steps to Reproduce</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="field-value repro-steps-content">
+                <pre>{{ data.reproSteps || 'No reproduction steps provided' }}</pre>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </mat-tab>
+
+      <!-- Assignment & Area Tab -->
+      <mat-tab label="Assignment & Area">
+        <div class="tab-content">
+          
+          <!-- Area Path -->
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-icon mat-card-avatar>folder</mat-icon>
+              <mat-card-title>Area Path</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="field-value">{{ data.areaPath || 'No area path specified' }}</p>
+            </mat-card-content>
+          </mat-card>
+
+          <!-- Assigned To -->
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-icon mat-card-avatar>person</mat-icon>
+              <mat-card-title>Assigned To</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p class="field-value">{{ data.assignedTo || 'Unassigned' }}</p>
+            </mat-card-content>
+          </mat-card>
+
+          <!-- Tags -->
+          <mat-card class="info-card">
+            <mat-card-header>
+              <mat-icon mat-card-avatar>label</mat-icon>
+              <mat-card-title>Tags</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="tags-container" *ngIf="data.tags && data.tags.length > 0; else noTags">
+                <mat-chip *ngFor="let tag of data.tags" class="tag-chip">
+                  {{ tag }}
+                </mat-chip>
+              </div>
+              <ng-template #noTags>
+                <p class="field-value">No tags specified</p>
+              </ng-template>
+            </mat-card-content>
+          </mat-card>
+
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-button (click)="onClose()">
+      Close
+    </button>
+  </mat-dialog-actions>
+</div>

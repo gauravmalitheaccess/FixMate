@@ -1,0 +1,123 @@
+.ado-story-dialog {
+  .dialog-icon {
+    margin-right: 8px;
+    color: #1976d2;
+  }
+
+  .dialog-content {
+    min-width: 600px;
+    max-width: 800px;
+    min-height: 400px;
+    padding: 0;
+  }
+
+  .dialog-tabs {
+    .mat-mdc-tab-group {
+      --mdc-tab-indicator-active-indicator-color: #1976d2;
+    }
+  }
+
+  .tab-content {
+    padding: 20px;
+    min-height: 350px;
+  }
+
+  .info-card {
+    margin-bottom: 16px;
+    
+    .mat-mdc-card-header {
+      padding-bottom: 8px;
+      
+      .mat-mdc-card-avatar {
+        //background-color: #f5f5f5;
+        color: #666;
+      }
+      
+      .mat-mdc-card-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+      }
+    }
+    
+    .mat-mdc-card-content {
+      padding-top: 8px;
+    }
+  }
+
+  .field-value {
+    margin: 0;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #1976d2;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    
+    &.description-content,
+    &.repro-steps-content {
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .priority-severity-row {
+    display: flex;
+    gap: 16px;
+    
+    .half-width {
+      flex: 1;
+    }
+  }
+
+  .priority-chip,
+  .severity-chip {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #1976d2;
+    
+    .tag-chip {
+      background-color: #e3f2fd;
+      color: #1976d2;
+      font-size: 12px;
+      height: 28px;
+      
+      &:hover {
+        background-color: #bbdefb;
+      }
+    }
+  }
+
+  .dialog-actions {
+    padding: 16px 24px;
+    justify-content: flex-end;
+    border-top: 1px solid #e0e0e0;
+    
+    button {
+      min-width: 80px;
+    }
+  }
+}
+
+.mat-mdc-dialog-container .ado-story-dialog-panel {
+  .mat-mdc-dialog-surface {
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+}

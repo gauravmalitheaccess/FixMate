@@ -1,0 +1,62 @@
+[
+  {
+    "id": "048d31d6-cafe-4a02-b344-86f6fb54f679",
+    "timestamp": "2025-08-26T14:59:00.737Z",
+    "source": "UserController.Login",
+    "message": "User authentication failed - invalid credentials",
+    "stackTrace": "at UserController.Login(LoginRequest request) in UserController.cs:line 45\nat AuthService.ValidateCredentials() in AuthService.cs:line 23",
+    "severity": "High",
+    "priority": "High",
+    "aiReasoning": "",
+    "analyzedAt": "2025-08-26T15:59:00.737Z",
+    "isAnalyzed": true
+  },
+  {
+    "id": "b2d28421-fbc7-47b1-9190-f7ae45975c5b",
+    "timestamp": "2025-08-26T12:59:00.737Z",
+    "source": "PaymentService.ProcessPayment",
+    "message": "Payment processing timeout - gateway unreachable",
+    "stackTrace": "at PaymentService.ProcessPayment() in PaymentService.cs:line 67\nat PaymentGateway.Charge() in PaymentGateway.cs:line 12",
+    "severity": "Critical",
+    "priority": "High",
+    "aiReasoning": "",
+    "analyzedAt": "2025-08-26T13:59:00.737Z",
+    "isAnalyzed": true
+  },
+  {
+    "id": "fb35e862-51c8-46d2-8591-a0d6270d0f9d",
+    "timestamp": "2025-08-26T10:59:00.737Z",
+    "source": "DatabaseConnection.Connect",
+    "message": "Database connection pool exhausted",
+    "stackTrace": "at DatabaseContext.GetConnection() in DatabaseContext.cs:line 89\nat ConnectionPool.AcquireConnection() in ConnectionPool.cs:line 34",
+    "severity": "High",
+    "priority": "Medium",
+    "aiReasoning": "",
+    "analyzedAt": "2025-08-26T11:59:00.737Z",
+    "isAnalyzed": true
+  },
+  {
+    "id": "f3aaa60b-32a4-42ec-a91a-5e6345e86b13",
+    "timestamp": "2025-08-26T08:59:00.737Z",
+    "source": "EmailService.SendEmail",
+    "message": "SMTP server connection failed",
+    "stackTrace": "at EmailService.SendEmail() in EmailService.cs:line 56\nat SmtpClient.Send() in SmtpClient.cs:line 78",
+    "severity": "Medium",
+    "priority": "Medium",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  },
+  {
+    "id": "9552da60-7348-49b4-b33a-b6fed3ebc4da",
+    "timestamp": "2025-08-26T06:59:00.737Z",
+    "source": "FileUploadController.Upload",
+    "message": "File upload size exceeds maximum limit",
+    "stackTrace": "at FileUploadController.Upload() in FileUploadController.cs:line 123\nat FileValidator.ValidateSize() in FileValidator.cs:line 45",
+    "severity": "Low",
+    "priority": "Low",
+    "aiReasoning": "",
+    "analyzedAt": "2025-08-26T07:59:00.737Z",
+    "isAnalyzed": true
+  }
+]

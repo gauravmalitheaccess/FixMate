@@ -1,0 +1,17 @@
+<mat-chip-set class="priority-chip-set">
+  <mat-chip 
+    [class]="getSizeClass()"
+    [style.color]="getPriorityConfig().color"
+    [style.background-color]="getPriorityConfig().backgroundColor"
+    [style.border-color]="getPriorityConfig().color"
+    [matTooltip]="getTooltipText()"
+    matTooltipClass="priority-tooltip"
+    [matTooltipShowDelay]="500">
+    
+    <mat-icon matChipAvatar [style.color]="getPriorityConfig().color">
+      {{ getPriorityConfig().icon }}
+    </mat-icon>
+    
+    {{ getPriorityConfig().label }}
+  </mat-chip>
+</mat-chip-set>

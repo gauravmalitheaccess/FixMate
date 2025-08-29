@@ -1,0 +1,537 @@
+2025-08-26 16:32:24.305 +05:30 [INF]  Configuration validation passed successfully {"SourceContext":"Program","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.344 +05:30 [INF]  Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage' {"SourceContext":"Hangfire.BackgroundJobServer","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.345 +05:30 [INF]  Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 {"SourceContext":"Hangfire.BackgroundJobServer","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.356 +05:30 [DBG]  Execution loop BackgroundServerProcess:417e955b has started in 4.0053 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.356 +05:30 [INF]  Server pc0758:60160:2b110a3b successfully announced in 0.0419 ms {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.359 +05:30 [DBG]  Execution loop ServerHeartbeatProcess:bffeb941 has started in 2.2639 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.359 +05:30 [DBG]  Execution loop DelayedJobScheduler:5d5d7766 has started in 2.3198 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.360 +05:30 [DBG]  Execution loop RecurringJobScheduler:b9c55697 has started in 0.4233 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.367 +05:30 [INF]  Server pc0758:60160:2b110a3b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler... {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.370 +05:30 [DBG]  Execution loop ServerWatchdog:3aaad2c3 has started in 1.0105 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.372 +05:30 [INF]  Starting daily analysis at "2025-08-26T11:02:24.3722104Z" {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.372 +05:30 [INF]  Collecting logs for date: 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.374 +05:30 [INF]  Loaded 4 logs, 2 unanalyzed for date 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.377 +05:30 [INF]  Found 2 logs for analysis on 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.377 +05:30 [INF]  Triggering Copilot Studio analysis for 2 logs {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.377 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-18.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.378 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-19.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.382 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-20.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.382 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-21.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.383 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-22.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.383 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-23.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.383 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-24.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.384 +05:30 [INF]  No historical analyzed logs found for context {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.384 +05:30 [DBG]  Execution loop ServerJobCancellationWatcher:f0995cd8 has started in 10.6054 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.385 +05:30 [INF]  Built historical context with 0 previous logs and 0 error patterns {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.386 +05:30 [DBG]  Execution loop ExpirationManager:aba17046 has started in 1.3968 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.388 +05:30 [INF]  Starting Copilot Studio analysis for 2 logs with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.388 +05:30 [DBG]  Built analysis request for 2 logs with 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.389 +05:30 [DBG]  Execution loop CountersAggregator:8f97b938 has started in 2.7661 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.389 +05:30 [DBG]  Sending analysis request to Copilot Studio with 2 logs and 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.393 +05:30 [DBG]  Execution loop Worker:83dd4594 has started in 4.0785 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.401 +05:30 [DBG]  Execution loop Worker:116225e4 has started in 12.4773 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.406 +05:30 [DBG]  Execution loop Worker:5fb7bd3c has started in 17.4084 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.416 +05:30 [DBG]  Execution loop Worker:2e00b114 has started in 27.2565 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.421 +05:30 [DBG]  Execution loop Worker:906abb6b has started in 31.6887 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.424 +05:30 [DBG]  Execution loop Worker:d93b8558 has started in 34.8519 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.426 +05:30 [DBG]  Execution loop Worker:db67d7ad has started in 36.9557 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.433 +05:30 [DBG]  Execution loop Worker:f2df4d57 has started in 44.4417 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.434 +05:30 [DBG]  Execution loop Worker:c5ec9e37 has started in 45.3287 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.442 +05:30 [DBG]  Execution loop Worker:7ec65b14 has started in 53.1288 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.452 +05:30 [DBG]  Execution loop Worker:b06accf3 has started in 63.4463 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.457 +05:30 [DBG]  Execution loop Worker:38a0f4f9 has started in 67.7984 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.457 +05:30 [DBG]  Execution loop Worker:caf151a2 has started in 68.6069 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.458 +05:30 [DBG]  Execution loop Worker:ded793d1 has started in 69.4827 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.459 +05:30 [DBG]  Execution loop Worker:79a064e2 has started in 70.2771 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.461 +05:30 [DBG]  Execution loop Worker:89a266ef has started in 71.8675 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.469 +05:30 [DBG]  Execution loop Worker:ff958f31 has started in 80.3186 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.474 +05:30 [DBG]  Execution loop Worker:d7ac451a has started in 84.9793 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.476 +05:30 [DBG]  Execution loop Worker:21b4e60d has started in 86.8871 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.477 +05:30 [DBG]  Execution loop Worker:0d94fb25 has started in 87.6705 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.477 +05:30 [DBG]  Execution loop DelayedJobScheduler:7fc072c4 has started in 0.6033 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.478 +05:30 [DBG]  Execution loop RecurringJobScheduler:9b709581 has started in 0.5745 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.481 +05:30 [INF]  Server pc0758:60160:2b110a3b all the dispatchers started {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:24.695 +05:30 [WRN]  Copilot Studio API retry attempt 1 after 2000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:26.717 +05:30 [WRN]  Copilot Studio API retry attempt 2 after 4000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:30.920 +05:30 [WRN]  Copilot Studio API retry attempt 3 after 8000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.113 +05:30 [ERR]  HTTP error during Copilot Studio analysis with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+2025-08-26 16:32:39.121 +05:30 [ERR]  HTTP error occurred during Copilot Studio analysis {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+2025-08-26 16:32:39.124 +05:30 [ERR]  Error occurred during daily analysis execution {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.ExecuteDailyAnalysisAsync() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 43
+2025-08-26 16:32:39.246 +05:30 [INF]  Starting daily analysis at "2025-08-26T11:02:39.2459281Z" {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.246 +05:30 [INF]  Collecting logs for date: 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.248 +05:30 [INF]  Loaded 4 logs, 2 unanalyzed for date 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.248 +05:30 [INF]  Found 2 logs for analysis on 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.248 +05:30 [INF]  Triggering Copilot Studio analysis for 2 logs {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.249 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-18.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.249 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-19.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.249 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-20.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.249 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-21.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.249 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-22.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.250 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-23.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.250 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-24.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.250 +05:30 [INF]  No historical analyzed logs found for context {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.251 +05:30 [INF]  Built historical context with 0 previous logs and 0 error patterns {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.251 +05:30 [INF]  Starting Copilot Studio analysis for 2 logs with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.251 +05:30 [DBG]  Built analysis request for 2 logs with 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.251 +05:30 [DBG]  Sending analysis request to Copilot Studio with 2 logs and 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:39.253 +05:30 [WRN]  Copilot Studio API retry attempt 1 after 2000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:41.271 +05:30 [WRN]  Copilot Studio API retry attempt 2 after 4000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:45.471 +05:30 [WRN]  Copilot Studio API retry attempt 3 after 8000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.671 +05:30 [ERR]  HTTP error during Copilot Studio analysis with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+2025-08-26 16:32:53.674 +05:30 [ERR]  HTTP error occurred during Copilot Studio analysis {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+2025-08-26 16:32:53.677 +05:30 [ERR]  Error occurred during daily analysis execution {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.ExecuteDailyAnalysisAsync() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 43
+2025-08-26 16:32:53.821 +05:30 [INF]  Starting daily analysis at "2025-08-26T11:02:53.8211117Z" {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.821 +05:30 [INF]  Collecting logs for date: 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.821 +05:30 [INF]  Loaded 4 logs, 2 unanalyzed for date 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.821 +05:30 [INF]  Found 2 logs for analysis on 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.822 +05:30 [INF]  Triggering Copilot Studio analysis for 2 logs {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.822 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-18.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.822 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-19.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.822 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-20.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.822 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-21.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.823 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-22.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.823 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-23.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.823 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-24.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.823 +05:30 [INF]  No historical analyzed logs found for context {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.824 +05:30 [INF]  Built historical context with 0 previous logs and 0 error patterns {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.824 +05:30 [INF]  Starting Copilot Studio analysis for 2 logs with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.825 +05:30 [DBG]  Built analysis request for 2 logs with 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.825 +05:30 [DBG]  Sending analysis request to Copilot Studio with 2 logs and 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:53.826 +05:30 [WRN]  Copilot Studio API retry attempt 1 after 2000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:54.361 +05:30 [DBG]  Server pc0758:60160:2b110a3b heartbeat successfully sent {"SourceContext":"Hangfire.Server.ServerHeartbeatProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:32:55.843 +05:30 [WRN]  Copilot Studio API retry attempt 2 after 4000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:00.038 +05:30 [WRN]  Copilot Studio API retry attempt 3 after 8000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.234 +05:30 [ERR]  HTTP error during Copilot Studio analysis with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+2025-08-26 16:33:08.236 +05:30 [ERR]  HTTP error occurred during Copilot Studio analysis {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+2025-08-26 16:33:08.238 +05:30 [ERR]  Error occurred during daily analysis execution {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.ExecuteDailyAnalysisAsync() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 43
+2025-08-26 16:33:08.310 +05:30 [INF]  Starting daily analysis at "2025-08-26T11:03:08.3101568Z" {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Collecting logs for date: 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Loaded 6 logs, 4 unanalyzed for date 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Found 4 logs for analysis on 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Triggering Copilot Studio analysis for 4 logs {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-18.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-19.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-20.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-21.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-22.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.310 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-23.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.311 +05:30 [INF]  No historical analyzed logs found for context {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.311 +05:30 [INF]  Built historical context with 0 previous logs and 0 error patterns {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.311 +05:30 [INF]  Starting Copilot Studio analysis for 4 logs with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.311 +05:30 [DBG]  Built analysis request for 4 logs with 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.311 +05:30 [DBG]  Sending analysis request to Copilot Studio with 4 logs and 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:08.312 +05:30 [WRN]  Copilot Studio API retry attempt 1 after 2000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:10.323 +05:30 [WRN]  Copilot Studio API retry attempt 2 after 4000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:14.515 +05:30 [WRN]  Copilot Studio API retry attempt 3 after 8000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.708 +05:30 [ERR]  HTTP error during Copilot Studio analysis with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+2025-08-26 16:33:22.710 +05:30 [ERR]  HTTP error occurred during Copilot Studio analysis {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+2025-08-26 16:33:22.711 +05:30 [ERR]  Error occurred during daily analysis execution {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.ExecuteDailyAnalysisAsync() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 43
+2025-08-26 16:33:22.808 +05:30 [INF]  Starting daily analysis at "2025-08-26T11:03:22.8082308Z" {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.808 +05:30 [INF]  Collecting logs for date: 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.808 +05:30 [INF]  Loaded 6 logs, 4 unanalyzed for date 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Found 4 logs for analysis on 2025-08-25 {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Triggering Copilot Studio analysis for 4 logs {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-18.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-19.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-20.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-21.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-22.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  Log file Data/Dev/Logs\logs-2025-08-23.json does not exist, returning empty list {"SourceContext":"ErrorLogPrioritization.Api.Utils.JsonFileManager","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.809 +05:30 [INF]  No historical analyzed logs found for context {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.810 +05:30 [INF]  Built historical context with 0 previous logs and 0 error patterns {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.810 +05:30 [INF]  Starting Copilot Studio analysis for 4 logs with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.810 +05:30 [DBG]  Built analysis request for 4 logs with 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.810 +05:30 [DBG]  Sending analysis request to Copilot Studio with 4 logs and 0 historical logs {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:22.813 +05:30 [WRN]  Copilot Studio API retry attempt 1 after 2000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:24.367 +05:30 [DBG]  Server pc0758:60160:2b110a3b heartbeat successfully sent {"SourceContext":"Hangfire.Server.ServerHeartbeatProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:24.830 +05:30 [WRN]  Copilot Studio API retry attempt 2 after 4000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:29.033 +05:30 [WRN]  Copilot Studio API retry attempt 3 after 8000ms {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.235 +05:30 [ERR]  HTTP error during Copilot Studio analysis with historical context {"SourceContext":"ErrorLogPrioritization.Api.Services.CopilotStudioService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+2025-08-26 16:33:37.241 +05:30 [ERR]  HTTP error occurred during Copilot Studio analysis {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+2025-08-26 16:33:37.252 +05:30 [ERR]  Error occurred during daily analysis execution {"SourceContext":"ErrorLogPrioritization.Api.Services.ScheduledAnalysisService","Application":"ErrorLogPrioritization.Api"}
+System.Net.Http.HttpRequestException: No such host is known. (dev-copilot-studio-endpoint.com:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.<>c__DisplayClass8_1.<<AnalyzeLogsAsync>b__0>d.MoveNext() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 140
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at ErrorLogPrioritization.Api.Services.CopilotStudioService.AnalyzeLogsAsync(List`1 logs, HistoricalContext historicalContext, CancellationToken cancellationToken) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\CopilotStudioService.cs:line 138
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.TriggerCopilotAnalysisAsync(List`1 logs) in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 108
+   at ErrorLogPrioritization.Api.Services.ScheduledAnalysisService.ExecuteDailyAnalysisAsync() in D:\FixMate Project\ErrorLogPrioritization.Api\Services\ScheduledAnalysisService.cs:line 43
+2025-08-26 16:33:37.290 +05:30 [DBG]  Execution loop DelayedJobScheduler:5d5d7766 stopped in 0.0221 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.290 +05:30 [DBG]  Execution loop RecurringJobScheduler:b9c55697 stopped in 0.0342 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.303 +05:30 [DBG]  Hangfire Server is stopping... {"SourceContext":"Hangfire.BackgroundJobServer","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.303 +05:30 [INF]  Server pc0758:60160:2b110a3b caught stopping signal... {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:ded793d1 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:0d94fb25 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:79a064e2 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:db67d7ad stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:21b4e60d stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop ExpirationManager:aba17046 stopped in 0.0181 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:7ec65b14 stopped in 0.1061 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:83dd4594 stopped in 0.1136 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop RecurringJobScheduler:9b709581 stopped in 0.1655 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:38a0f4f9 stopped in 0.2013 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop ServerJobCancellationWatcher:f0995cd8 stopped in 0.2508 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop DelayedJobScheduler:7fc072c4 stopped in 0.3128 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Hangfire Server is stopping... {"SourceContext":"Hangfire.BackgroundJobServer","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:d93b8558 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:ff958f31 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:c5ec9e37 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:caf151a2 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:5fb7bd3c stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:b06accf3 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:89a266ef stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:116225e4 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:f2df4d57 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop CountersAggregator:8f97b938 stopped in 0 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop Worker:2e00b114 stopped in 0.0093 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Execution loop ServerWatchdog:3aaad2c3 stopped in 0.0332 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.304 +05:30 [DBG]  Hangfire Server is stopping... {"SourceContext":"Hangfire.BackgroundJobServer","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [DBG]  Execution loop Worker:d7ac451a stopped in 0.7993 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [DBG]  Execution loop Worker:906abb6b stopped in 0.862 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [INF]  Server pc0758:60160:2b110a3b All dispatchers stopped {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [DBG]  Execution loop ServerHeartbeatProcess:bffeb941 stopped in 0.0384 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [INF]  Server pc0758:60160:2b110a3b successfully reported itself as stopped in 0.0031 ms {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [INF]  Server pc0758:60160:2b110a3b has been stopped in total 1.3882 ms {"SourceContext":"Hangfire.Server.BackgroundServerProcess","Application":"ErrorLogPrioritization.Api"}
+2025-08-26 16:33:37.305 +05:30 [DBG]  Execution loop BackgroundServerProcess:417e955b stopped in 1.4249 ms {"SourceContext":"Hangfire.Processing.BackgroundExecution","Application":"ErrorLogPrioritization.Api"}

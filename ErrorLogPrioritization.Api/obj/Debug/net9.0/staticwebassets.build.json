@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "2KCo71UnFFUHEoNkXozB4F5EUPAWx7PaLIEppQTnXJg=",
+  "Source": "ErrorLogPrioritization.Api",
+  "BasePath": "_content/ErrorLogPrioritization.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

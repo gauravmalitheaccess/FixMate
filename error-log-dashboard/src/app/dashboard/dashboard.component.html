@@ -1,0 +1,212 @@
+<!-- Navigation Header -->
+<mat-toolbar color="primary" class="dashboard-toolbar">
+  <mat-icon class="toolbar-icon">dashboard</mat-icon>
+  <span class="toolbar-title">Error Log Dashboard</span>
+  
+  <span class="toolbar-spacer"></span>
+  
+  <button mat-icon-button (click)="refreshData()" [disabled]="isLoading" matTooltip="Refresh Data">
+    <mat-icon>refresh</mat-icon>
+  </button>
+  
+  <button 
+    mat-icon-button 
+    (click)="openExcelDownloadDialog()" 
+    [disabled]="isLoading || isDownloading" 
+    matTooltip="Download Excel Report">
+    <mat-icon>file_download</mat-icon>
+  </button>
+  
+  <button 
+    mat-icon-button 
+    (click)="openLogGeneratorDialog()" 
+    [disabled]="isLoading" 
+    matTooltip="Generate Sample Logs">
+    <mat-icon>science</mat-icon>
+  </button>
+  
+  <button 
+    mat-icon-button 
+    (click)="openAiAnalysisDialog()" 
+    [disabled]="isLoading" 
+    matTooltip="Analyze Raw Exception with AI">
+    <mat-icon>psychology</mat-icon>
+  </button>
+  
+  <button mat-icon-button matTooltip="Settings">
+    <mat-icon>settings</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!-- Loading Spinner -->
+<div *ngIf="isLoading" class="loading-container">
+  <mat-spinner diameter="50"></mat-spinner>
+  <p class="loading-text">Loading dashboard data...</p>
+</div>
+
+<!-- Error State -->
+<div *ngIf="error && !isLoading" class="error-container">
+  <mat-icon class="error-icon">error_outline</mat-icon>
+  <h3>Unable to Load Dashboard</h3>
+  <p>{{ error }}</p>
+  <button mat-raised-button color="primary" (click)="refreshData()">
+    <mat-icon>refresh</mat-icon>
+    Try Again
+  </button>
+</div>
+
+<!-- Dashboard Content -->
+<div *ngIf="!isLoading && !error" class="dashboard-content">
+  
+  <!-- Statistics Cards -->
+  <div class="statistics-section">
+    <h2 class="section-title">Overview</h2>
+    
+    <mat-grid-list cols="4" rowHeight="120px" gutterSize="16px" class="statistics-grid">
+      
+      <!-- Total Logs Card -->
+      <mat-grid-tile>
+        <mat-card class="stat-card">
+          <mat-card-content>
+            <div class="stat-content">
+              <div class="stat-icon total">
+                <mat-icon>list_alt</mat-icon>
+              </div>
+              <div class="stat-details">
+                <div class="stat-number">{{ statistics?.totalLogs || 0 }}</div>
+                <div class="stat-label">Total Logs</div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+      <!-- Critical Logs Card -->
+      <mat-grid-tile>
+        <mat-card class="stat-card">
+          <mat-card-content>
+            <div class="stat-content">
+              <div class="stat-icon critical">
+                <mat-icon>warning</mat-icon>
+              </div>
+              <div class="stat-details">
+                <div class="stat-number">{{ statistics?.criticalCount || 0 }}</div>
+                <div class="stat-label">Critical</div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+      <!-- High Priority Card -->
+      <mat-grid-tile>
+        <mat-card class="stat-card">
+          <mat-card-content>
+            <div class="stat-content">
+              <div class="stat-icon high">
+                <mat-icon>priority_high</mat-icon>
+              </div>
+              <div class="stat-details">
+                <div class="stat-number">{{ statistics?.highCount || 0 }}</div>
+                <div class="stat-label">High Priority</div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+      <!-- Analyzed Logs Card -->
+      <mat-grid-tile>
+        <mat-card class="stat-card">
+          <mat-card-content>
+            <div class="stat-content">
+              <div class="stat-icon analyzed">
+                <mat-icon>analytics</mat-icon>
+              </div>
+              <div class="stat-details">
+                <div class="stat-number">{{ statistics?.analyzedCount || 0 }}</div>
+                <div class="stat-label">Analyzed</div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </div>
+
+  <!-- Recent Logs Section -->
+  <div class="recent-logs-section">
+    <h2 class="section-title">Recent Logs</h2>
+    
+    <mat-card class="recent-logs-card">
+      <mat-card-content>
+        
+        <!-- Empty State -->
+        <div *ngIf="recentLogs.length === 0" class="empty-state">
+          <mat-icon class="empty-icon">inbox</mat-icon>
+          <h3>No Recent Logs</h3>
+          <p>No error logs have been collected yet.</p>
+        </div>
+
+        <!-- Recent Logs List -->
+        <div *ngIf="recentLogs.length > 0" class="logs-list">
+          <div *ngFor="let log of recentLogs; trackBy: trackByLogId" class="log-item">
+            
+            <div class="log-priority">
+              <div 
+                class="priority-indicator" 
+                [style.background-color]="getPriorityColor(log.priority)"
+                [matTooltip]="'Priority: ' + (log.priority || 'Unknown')">
+              </div>
+            </div>
+
+            <div class="log-content">
+              <div class="log-header">
+                <span class="log-source">{{ log.source }}</span>
+                <span class="log-timestamp">{{ log.timestamp | date:'short' }}</span>
+              </div>
+              
+              <div class="log-message">{{ log.message }}</div>
+              
+              <div class="log-metadata">
+                <span 
+                  class="severity-badge" 
+                  [style.background-color]="getSeverityColor(log.severity)">
+                  {{ log.severity || 'Unknown' }}
+                </span>
+                
+                <span *ngIf="log.isAnalyzed" class="analyzed-badge">
+                  <mat-icon class="badge-icon">check_circle</mat-icon>
+                  Analyzed
+                </span>
+                
+                <span *ngIf="!log.isAnalyzed" class="unanalyzed-badge">
+                  <mat-icon class="badge-icon">schedule</mat-icon>
+                  Pending Analysis
+                </span>
+              </div>
+            </div>
+
+            <div class="log-actions">
+              <button mat-icon-button matTooltip="View Details">
+                <mat-icon>visibility</mat-icon>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div *ngIf="recentLogs.length > 0" class="view-all-container">
+          <button mat-raised-button color="primary" routerLink="/logs">
+            <mat-icon>list</mat-icon>
+            View All Logs
+          </button>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>

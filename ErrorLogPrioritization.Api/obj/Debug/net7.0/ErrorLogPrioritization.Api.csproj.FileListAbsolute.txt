@@ -1,0 +1,311 @@
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Development.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Production.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Staging.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-24.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-25.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-26.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.exe
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.deps.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.runtimeconfig.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.pdb
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.xml
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Antlr3.Runtime.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ClosedXML.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\CommandLine.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ExcelNumberFormat.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.AspNetCore.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.Core.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.MemoryStorage.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.NetCore.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.SqlServer.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Iesi.Collections.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Irony.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\NHibernate.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Polly.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Polly.Extensions.Http.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Remotion.Linq.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Remotion.Linq.EagerFetching.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Enrichers.CorrelationId.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\SixLabors.Fonts.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.IO.Packaging.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\XLParser.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.csproj.AssemblyReference.cache
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.AssemblyInfoInputs.cache
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.AssemblyInfo.cs
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.csproj.CoreCompileInputs.cache
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.sourcelink.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.development.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets\msbuild.ErrorLogPrioritization.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.ErrorLogPrioritization.Api.props
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ErrorLogPrioritization.Api.props
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ErrorLogPrioritization.Api.props
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.pack.json
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\scopedcss\bundle\ErrorLogPrioritization.Api.styles.css
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLog.0983CDF7.Up2Date
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\refint\ErrorLogPrioritization.Api.dll
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.xml
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.pdb
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.genruntimeconfig.cache
+D:\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ref\ErrorLogPrioritization.Api.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Development.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Production.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Staging.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-24.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-25.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-26.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-27.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.staticwebassets.endpoints.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.exe
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.deps.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.runtimeconfig.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.pdb
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.xml
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Antlr3.Runtime.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ClosedXML.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\CommandLine.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ExcelNumberFormat.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.AspNetCore.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.Core.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.MemoryStorage.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.NetCore.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.SqlServer.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Iesi.Collections.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Irony.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\NHibernate.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Polly.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Polly.Extensions.Http.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Remotion.Linq.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Remotion.Linq.EagerFetching.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Enrichers.CorrelationId.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\SixLabors.Fonts.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.IO.Packaging.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\XLParser.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.csproj.AssemblyReference.cache
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rpswa.dswa.cache.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.AssemblyInfoInputs.cache
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.AssemblyInfo.cs
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.csproj.CoreCompileInputs.cache
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.sourcelink.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rjimswa.dswa.cache.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rjsmrazor.dswa.cache.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rjsmcshtml.dswa.cache.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\scopedcss\bundle\ErrorLogPrioritization.Api.styles.css
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.json.cache
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.development.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLog.0983CDF7.Up2Date
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\refint\ErrorLogPrioritization.Api.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.xml
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.pdb
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.genruntimeconfig.cache
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ref\ErrorLogPrioritization.Api.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Core.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Identity.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.ClientModel.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Memory.Data.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Text.Json.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.AI.Agents.Persistent.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.AI.OpenAI.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.AI.Projects.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Storage.Common.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.AI.Abstractions.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\OpenAI.dll
+D:\FixMate (3)\FixMate\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.IO.Hashing.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.csproj.AssemblyReference.cache
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rpswa.dswa.cache.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.AssemblyInfoInputs.cache
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.AssemblyInfo.cs
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.csproj.CoreCompileInputs.cache
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.sourcelink.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Development.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Production.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\appsettings.Staging.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-24.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-25.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-26.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-27.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Data\Dev\Logs\logs-2025-08-28.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.staticwebassets.endpoints.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.exe
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.deps.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.runtimeconfig.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.pdb
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ErrorLogPrioritization.Api.xml
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Antlr3.Runtime.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.AI.Agents.Persistent.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.AI.OpenAI.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.AI.Projects.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Core.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Identity.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Azure.Storage.Common.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ClosedXML.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\CommandLine.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\ExcelNumberFormat.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.AspNetCore.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.Core.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.MemoryStorage.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.NetCore.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Hangfire.SqlServer.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Iesi.Collections.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Irony.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.AI.Abstractions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\NHibernate.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\OpenAI.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Polly.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Polly.Extensions.Http.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Remotion.Linq.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Remotion.Linq.EagerFetching.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Enrichers.CorrelationId.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\SixLabors.Fonts.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.ClientModel.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.IO.Hashing.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.IO.Packaging.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Memory.Data.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Text.Json.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\XLParser.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rjimswa.dswa.cache.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rjsmrazor.dswa.cache.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\rjsmcshtml.dswa.cache.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\scopedcss\bundle\ErrorLogPrioritization.Api.styles.css
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.json.cache
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.development.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLog.0983CDF7.Up2Date
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\refint\ErrorLogPrioritization.Api.dll
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.xml
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.pdb
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ErrorLogPrioritization.Api.genruntimeconfig.cache
+D:\Hackathon\Onboarded\FixMate\ErrorLogPrioritization.Api\obj\Debug\net7.0\ref\ErrorLogPrioritization.Api.dll

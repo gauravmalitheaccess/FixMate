@@ -1,0 +1,433 @@
+<mat-card class="log-list-card">
+  <mat-card-header>
+    <mat-card-title class="list-title">
+      <mat-icon>list_alt</mat-icon>
+      Error Logs
+      <span class="log-counts">
+        <mat-chip class="count-chip total">{{ getTotalCount() }} total</mat-chip>
+        <mat-chip class="count-chip analyzed">{{ getAnalyzedCount() }} resolved</mat-chip>
+        <mat-chip class="count-chip unanalyzed">{{ getUnanalyzedCount() }} pending</mat-chip>
+        <mat-chip *ngIf="enableGrouping" class="count-chip grouped">{{ getGroupedTotalCount() }} groups</mat-chip>
+      </span>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <div class="card-actions">
+        <button 
+          mat-stroked-button 
+          (click)="toggleGroupingMode()"
+          class="grouping-toggle">
+          <mat-icon>{{ enableGrouping ? 'view_list' : 'group_work' }}</mat-icon>
+          {{ enableGrouping ? 'Show Individual Logs' : 'Group Similar Errors' }}
+        </button>
+
+        <button 
+          mat-raised-button 
+          color="primary"
+          (click)="onDownloadExcel()"
+          [disabled]="isDownloadingExcel || logs.length === 0"
+          class="download-button">
+          
+          <mat-spinner 
+            *ngIf="isDownloadingExcel" 
+            diameter="20" 
+            class="download-spinner">
+          </mat-spinner>
+          
+          <mat-icon *ngIf="!isDownloadingExcel">file_download</mat-icon>
+          
+          {{ isDownloadingExcel ? 'Generating...' : 'Download Excel' }}
+        </button>
+      </div>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    
+    <!-- Loading State -->
+    <div *ngIf="isLoading" class="loading-container">
+      <mat-spinner diameter="40"></mat-spinner>
+      <p class="loading-text">Loading logs...</p>
+    </div>
+
+    <!-- Error State -->
+    <div *ngIf="error && !isLoading" class="error-container">
+      <mat-icon class="error-icon">error_outline</mat-icon>
+      <h3>Failed to Load Logs</h3>
+      <p>{{ error }}</p>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!isLoading && !error && logs.length === 0" class="empty-state">
+      <mat-icon class="empty-icon">inbox</mat-icon>
+      <h3>No Logs Found</h3>
+      <p>No error logs match the current filters.</p>
+    </div>
+
+    <!-- Logs Table -->
+    <div *ngIf="!isLoading && !error && logs.length > 0" class="table-container">
+      
+      <!-- Regular Table View -->
+      <table *ngIf="!enableGrouping" mat-table [dataSource]="dataSource" matSort class="logs-table">
+        
+        <!-- Priority Column -->
+        <ng-container matColumnDef="priority">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="priority">Priority</th>
+          <td mat-cell *matCellDef="let log">
+            <app-priority-indicator 
+              [priority]="log.priority" 
+              [aiReasoning]="log.aiReasoning"
+              size="small">
+            </app-priority-indicator>
+          </td>
+        </ng-container>
+
+        <!-- Timestamp Column -->
+        <ng-container matColumnDef="timestamp">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="timestamp">Timestamp</th>
+          <td mat-cell *matCellDef="let log" class="timestamp-cell">
+            <div class="timestamp-content">
+              <span class="timestamp-date">{{ log.timestamp | date:'MMM d, y' }}</span>
+              <span class="timestamp-time">{{ log.timestamp | date:'HH:mm:ss' }}</span>
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Source Column -->
+        <ng-container matColumnDef="source">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="source">Source</th>
+          <td mat-cell *matCellDef="let log" class="source-cell">
+            <mat-icon class="source-icon">code</mat-icon>
+            <span class="source-text">{{ log.source }}</span>
+          </td>
+        </ng-container>
+
+        <!-- Message Column -->
+        <ng-container matColumnDef="message">
+          <th mat-header-cell *matHeaderCellDef>Message</th>
+          <td mat-cell *matCellDef="let log" class="message-cell">
+            <div class="message-content" [matTooltip]="log.message" matTooltipClass="message-tooltip">
+              {{ truncateMessage(log.message, 80) }}
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Potential Fix Column -->
+        <ng-container matColumnDef="potentialFix">
+          <th mat-header-cell *matHeaderCellDef>Potential Fix</th>
+          <td mat-cell *matCellDef="let log" class="potential-fix-cell">
+            <div class="potential-fix-content" 
+                 [matTooltip]="log.potentialFix || 'No fix suggestion available'" 
+                 matTooltipClass="potential-fix-tooltip">
+              <mat-icon class="fix-icon" *ngIf="log.potentialFix">lightbulb</mat-icon>
+              <span class="fix-text">
+                {{ log.potentialFix ? truncateMessage(log.potentialFix, 60) : 'No suggestion' }}
+              </span>
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Severity Column -->
+        <ng-container matColumnDef="severity">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="severity">Severity</th>
+          <td mat-cell *matCellDef="let log">
+            <mat-chip 
+              class="severity-chip"
+              [style.background-color]="getSeverityColor(log.severity)"
+              [style.color]="'white'">
+              <mat-icon matChipAvatar [style.color]="'white'">
+                {{ getSeverityIcon(log.severity) }}
+              </mat-icon>
+              {{ log.severity || 'Unknown' }}
+            </mat-chip>
+          </td>
+        </ng-container>
+
+        <!-- Status Column -->
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="status">Status</th>
+          <td mat-cell *matCellDef="let log" class="status-cell">
+            <!-- AI Analysis Status -->
+            <!-- <div class="ai-status">
+              <mat-chip 
+                *ngIf="log.isAnalyzed" 
+                class="status-chip analyzed">
+                <mat-icon matChipAvatar>check_circle</mat-icon>
+                Analyzed
+              </mat-chip>
+              <mat-chip 
+                *ngIf="!log.isAnalyzed" 
+                class="status-chip pending">
+                <mat-icon matChipAvatar>schedule</mat-icon>
+                Pending
+              </mat-chip>
+            </div> -->
+            
+            <!-- Resolution Status -->
+            <div class="resolution-status">
+              <mat-chip 
+                class="resolution-chip"
+                [ngClass]="{
+                  'pending': log.resolutionStatus === 'Pending',
+                  'resolved': log.resolutionStatus === 'Resolved'
+                }">
+                <mat-icon matChipAvatar>
+                  {{ log.resolutionStatus === 'Resolved' ? 'task_alt' : 'pending_actions' }}
+                </mat-icon>
+                {{ log.resolutionStatus || 'Pending' }}
+              </mat-chip>
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let log" class="actions-cell">
+            <!-- Keep existing View Details and View Stack Trace buttons -->
+            <button 
+              mat-icon-button 
+              (click)="onViewDetails(log)"
+              matTooltip="View Details"
+              class="action-button">
+              <mat-icon>visibility</mat-icon>
+            </button>
+            
+            <button 
+              mat-icon-button 
+              (click)="onViewStackTrace(log)"
+              matTooltip="View Stack Trace"
+              class="action-button"
+              [disabled]="!log.stackTrace">
+              <mat-icon>bug_report</mat-icon>
+            </button>
+
+            <!-- More Options Dropdown -->
+            <button 
+              mat-icon-button 
+              [matMenuTriggerFor]="moreOptionsMenu"
+              matTooltip="More Options"
+              class="action-button more-options-button">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <mat-menu #moreOptionsMenu="matMenu" class="more-options-menu">
+              <button mat-menu-item (click)="onChangePriority(log)">
+                <mat-icon>flag</mat-icon>
+                <span>Change Priority</span>
+              </button>
+              
+              <button mat-menu-item (click)="onCreateAdoStory(log)">
+                <mat-icon>assignment</mat-icon>
+                <span>Create ADO Story</span>
+              </button>
+              
+              <button mat-menu-item (click)="onIgnoreErrorType(log)">
+                <mat-icon>visibility_off</mat-icon>
+                <span>Ignore This Type</span>
+              </button>
+              
+              <mat-divider></mat-divider>
+              
+              <button 
+                mat-menu-item 
+                (click)="onMarkAsResolved(log)"
+                [disabled]="log.resolutionStatus === 'Resolved'">
+                <mat-icon>check_circle</mat-icon>
+                <span>Mark as Resolved</span>
+              </button>
+            </mat-menu>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" 
+            class="log-row"
+            [class.high-priority]="row.priority?.toLowerCase() === 'high'"
+            [class.analyzed]="row.isAnalyzed"></tr>
+      </table>
+
+      <!-- Grouped Table View -->
+      <table *ngIf="enableGrouping" mat-table [dataSource]="groupedDataSource" matSort class="logs-table grouped-table">
+        
+        <!-- Expand/Collapse Column -->
+        <ng-container matColumnDef="expand">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let group" class="expand-cell">
+            <button 
+              mat-icon-button 
+              (click)="toggleGroupExpansion(group)"
+              [matTooltip]="group.isExpanded ? 'Collapse group' : 'Expand group'">
+              <mat-icon>{{ group.isExpanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!-- Priority Column for Groups -->
+        <ng-container matColumnDef="priority">
+          <th mat-header-cell *matHeaderCellDef>Priority</th>
+          <td mat-cell *matCellDef="let group">
+            <app-priority-indicator 
+              [priority]="group.highestPriority" 
+              size="small">
+            </app-priority-indicator>
+          </td>
+        </ng-container>
+
+        <!-- Pattern Column -->
+        <ng-container matColumnDef="pattern">
+          <th mat-header-cell *matHeaderCellDef>Error Pattern</th>
+          <td mat-cell *matCellDef="let group" class="pattern-cell">
+            <div class="pattern-content" [matTooltip]="group.pattern" matTooltipClass="pattern-tooltip">
+              {{ truncateMessage(group.pattern, 100) }}
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Count Column -->
+        <ng-container matColumnDef="count">
+          <th mat-header-cell *matHeaderCellDef>Count</th>
+          <td mat-cell *matCellDef="let group" class="count-cell">
+            <mat-chip class="count-chip-group">
+              <mat-icon matChipAvatar>group</mat-icon>
+              {{ group.count }}
+            </mat-chip>
+          </td>
+        </ng-container>
+
+        <!-- Latest Timestamp Column -->
+        <ng-container matColumnDef="latestTimestamp">
+          <th mat-header-cell *matHeaderCellDef>Latest Occurrence</th>
+          <td mat-cell *matCellDef="let group" class="timestamp-cell">
+            <div class="timestamp-content">
+              <span class="timestamp-date">{{ group.latestTimestamp | date:'MMM d, y' }}</span>
+              <span class="timestamp-time">{{ group.latestTimestamp | date:'HH:mm:ss' }}</span>
+            </div>
+          </td>
+        </ng-container>
+
+        <!-- Actions Column for Groups -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let group" class="actions-cell">
+            <button 
+              mat-icon-button 
+              (click)="toggleGroupExpansion(group)"
+              [matTooltip]="group.isExpanded ? 'Collapse' : 'Expand'"
+              class="action-button">
+              <mat-icon>{{ group.isExpanded ? 'unfold_less' : 'unfold_more' }}</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="groupedDisplayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: groupedDisplayedColumns;" 
+            class="group-row"
+            [class.high-priority]="row.highestPriority?.toLowerCase() === 'high'"></tr>
+
+        <!-- Expanded Group Details -->
+        <ng-container *ngFor="let group of groupedLogs; trackBy: trackByGroupPattern">
+          <tr *ngIf="group.isExpanded" class="expanded-group-header">
+            <td [attr.colspan]="groupedDisplayedColumns.length" class="expanded-header-cell">
+              <div class="expanded-header">
+                <mat-icon>group</mat-icon>
+                <span>{{ group.count }} similar errors in this group</span>
+              </div>
+            </td>
+          </tr>
+          <tr *ngFor="let log of group.logs; trackBy: trackByLogId" 
+              [style.display]="group.isExpanded ? 'table-row' : 'none'"
+              class="expanded-log-row">
+            <td class="expand-spacer"></td>
+            <td class="priority-cell">
+              <app-priority-indicator 
+                [priority]="log.priority" 
+                [aiReasoning]="log.aiReasoning"
+                size="small">
+              </app-priority-indicator>
+            </td>
+            <td class="message-cell">
+              <div class="message-content" [matTooltip]="log.message" matTooltipClass="message-tooltip">
+                {{ truncateMessage(log.message, 60) }}
+              </div>
+            </td>
+            <td class="source-cell">
+              <mat-icon class="source-icon">code</mat-icon>
+              <span class="source-text">{{ log.source }}</span>
+            </td>
+            <td class="timestamp-cell">
+              <div class="timestamp-content">
+                <span class="timestamp-date">{{ log.timestamp | date:'MMM d, y' }}</span>
+                <span class="timestamp-time">{{ log.timestamp | date:'HH:mm:ss' }}</span>
+              </div>
+            </td>
+            <td class="actions-cell">
+              <button 
+                mat-icon-button 
+                (click)="onViewDetails(log)"
+                matTooltip="View Details"
+                class="action-button">
+                <mat-icon>visibility</mat-icon>
+              </button>
+              <button 
+                mat-icon-button 
+                (click)="onViewStackTrace(log)"
+                matTooltip="View Stack Trace"
+                class="action-button"
+                [disabled]="!log.stackTrace">
+                <mat-icon>bug_report</mat-icon>
+              </button>
+
+              <!-- More Options Dropdown for Grouped View -->
+              <button 
+                mat-icon-button 
+                [matMenuTriggerFor]="moreOptionsMenuGrouped"
+                matTooltip="More Options"
+                class="action-button more-options-button">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+
+              <!-- Dropdown Menu for Grouped View -->
+              <mat-menu #moreOptionsMenuGrouped="matMenu" class="more-options-menu">
+                <button mat-menu-item (click)="onChangePriority(log)">
+                  <mat-icon>flag</mat-icon>
+                  <span>Change Priority</span>
+                </button>
+                
+                <button mat-menu-item (click)="onCreateAdoStory(log)">
+                  <mat-icon>assignment</mat-icon>
+                  <span>Create ADO Story</span>
+                </button>
+                
+                <button mat-menu-item (click)="onIgnoreErrorType(log)">
+                  <mat-icon>visibility_off</mat-icon>
+                  <span>Ignore This Type</span>
+                </button>
+                
+                <mat-divider></mat-divider>
+                
+                <button 
+                  mat-menu-item 
+                  (click)="onMarkAsResolved(log)"
+                  [disabled]="log.resolutionStatus === 'Resolved'">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Mark as Resolved</span>
+                </button>
+              </mat-menu>
+            </td>
+          </tr>
+        </ng-container>
+      </table>
+
+      <!-- Paginator -->
+      <mat-paginator 
+        [pageSizeOptions]="[10, 25, 50, 100]"
+        [pageSize]="25"
+        showFirstLastButtons
+        class="logs-paginator">
+      </mat-paginator>
+
+    </div>
+
+  </mat-card-content>
+</mat-card>

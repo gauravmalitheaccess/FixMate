@@ -1,0 +1,26 @@
+[
+  {
+    "id": "8b2a4b4d-2f7c-462d-ab00-8d4ccbcb5232",
+    "timestamp": "2025-08-25T14:59:00.737Z",
+    "source": "OrderService.CreateOrder",
+    "message": "Order creation failed - inventory insufficient",
+    "stackTrace": "at OrderService.CreateOrder() in OrderService.cs:line 89\nat InventoryService.CheckAvailability() in InventoryService.cs:line 45",
+    "severity": "Medium",
+    "priority": "High",
+    "aiReasoning": "",
+    "analyzedAt": "2025-08-25T15:59:00.737Z",
+    "isAnalyzed": true
+  },
+  {
+    "id": "43ef49cc-f857-41db-9f90-81b1e23b17b0",
+    "timestamp": "2025-08-25T10:59:00.737Z",
+    "source": "ProductController.GetProduct",
+    "message": "Product not found in database",
+    "stackTrace": "at ProductController.GetProduct() in ProductController.cs:line 67\nat ProductRepository.FindById() in ProductRepository.cs:line 23",
+    "severity": "Low",
+    "priority": "Low",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  }
+]

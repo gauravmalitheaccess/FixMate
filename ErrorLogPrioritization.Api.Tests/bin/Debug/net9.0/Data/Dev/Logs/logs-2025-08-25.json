@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c89486a5-6bdd-47f4-a4ad-9f8d12d8d83c",
+    "timestamp": "2025-08-25T10:00:00",
+    "source": "Test Application",
+    "message": "Test error for Excel export",
+    "stackTrace": "at TestMethod() line 42",
+    "severity": "High",
+    "priority": "High",
+    "aiReasoning": "Test reasoning",
+    "analyzedAt": "2025-08-25T11:00:00",
+    "isAnalyzed": true
+  },
+  {
+    "id": "1ccd3d09-a16c-4a90-8019-e5f46f6df820",
+    "timestamp": "2025-08-25T14:00:00",
+    "source": "Another Test App",
+    "message": "Another test error",
+    "stackTrace": "at AnotherMethod() line 24",
+    "severity": "Medium",
+    "priority": "Medium",
+    "aiReasoning": "Another test reasoning",
+    "analyzedAt": "2025-08-25T15:00:00",
+    "isAnalyzed": true
+  },
+  {
+    "id": "date-test-20250825-bc6d168f-c463-481e-824c-2055675deb20",
+    "timestamp": "2025-08-25T09:00:00+05:30",
+    "source": "DateTest.Application",
+    "message": "Test error for 2025-08-25",
+    "stackTrace": "at TestMethod() line 1",
+    "severity": "Medium",
+    "priority": "",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  },
+  {
+    "id": "date-test-20250825-bb51abed-619c-45d3-8b6f-ad3fab1cbe56",
+    "timestamp": "2025-08-25T15:00:00+05:30",
+    "source": "DateTest.Service",
+    "message": "Another test error for 2025-08-25",
+    "stackTrace": "at ServiceMethod() line 2",
+    "severity": "Low",
+    "priority": "",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  },
+  {
+    "id": "date-test-20250825-8d5b7d74-74ae-4a9a-bf3c-8aa392943feb",
+    "timestamp": "2025-08-25T09:00:00+05:30",
+    "source": "DateTest.Application",
+    "message": "Test error for 2025-08-25",
+    "stackTrace": "at TestMethod() line 1",
+    "severity": "Medium",
+    "priority": "",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  },
+  {
+    "id": "date-test-20250825-b1730d55-7f00-49f8-998b-656fc0141301",
+    "timestamp": "2025-08-25T15:00:00+05:30",
+    "source": "DateTest.Service",
+    "message": "Another test error for 2025-08-25",
+    "stackTrace": "at ServiceMethod() line 2",
+    "severity": "Low",
+    "priority": "",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  }
+]

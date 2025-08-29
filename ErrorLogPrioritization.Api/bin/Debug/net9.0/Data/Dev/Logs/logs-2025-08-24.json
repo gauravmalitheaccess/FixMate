@@ -1,0 +1,14 @@
+[
+  {
+    "id": "54f2f115-339f-47ac-934f-c39a1ff351e9",
+    "timestamp": "2025-08-24T13:59:00.737Z",
+    "source": "ReportGenerator.GenerateReport",
+    "message": "Report generation memory limit exceeded",
+    "stackTrace": "at ReportGenerator.GenerateReport() in ReportGenerator.cs:line 156\nat MemoryManager.AllocateMemory() in MemoryManager.cs:line 78",
+    "severity": "Critical",
+    "priority": "High",
+    "aiReasoning": "",
+    "analyzedAt": "2025-08-24T14:59:00.737Z",
+    "isAnalyzed": true
+  }
+]

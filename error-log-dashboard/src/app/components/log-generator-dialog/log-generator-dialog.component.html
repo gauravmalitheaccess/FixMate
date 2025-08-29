@@ -1,0 +1,99 @@
+<div class="dialog-container p-2">
+  <h2 mat-dialog-title>
+    <mat-icon class="dialog-icon">science</mat-icon>
+    Generate Sample Logs
+  </h2>
+
+  <mat-dialog-content class="dialog-content">
+    <p class="dialog-description">
+      Generate realistic sample error logs for testing and demonstration purposes.
+    </p>
+
+    <div class="form-fields">
+      <!-- Count Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Number of Logs</mat-label>
+        <input 
+          matInput 
+          type="number" 
+          [(ngModel)]="count" 
+          min="1" 
+          max="100"
+          placeholder="10">
+        <mat-hint>Between 1 and 100 logs</mat-hint>
+        <mat-error *ngIf="count < 1 || count > 100">
+          Count must be between 1 and 100
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Severity Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Severity Level</mat-label>
+        <mat-select [(ngModel)]="severity">
+          <mat-option *ngFor="let option of severityOptions" [value]="option.value">
+            {{ option.label }}
+          </mat-option>
+        </mat-select>
+        <mat-hint>Choose specific severity or mixed levels</mat-hint>
+      </mat-form-field>
+
+      <!-- Time Range Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Time Range (Hours Back)</mat-label>
+        <input 
+          matInput 
+          type="number" 
+          [(ngModel)]="hoursBack" 
+          min="1" 
+          max="168"
+          placeholder="24">
+        <mat-hint>Distribute logs over the last {{ hoursBack }} hours (max 168 = 1 week)</mat-hint>
+        <mat-error *ngIf="hoursBack < 1 || hoursBack > 168">
+          Hours must be between 1 and 168 (1 week)
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Time Range Slider -->
+      <div class="slider-container">
+        <label class="slider-label">Time Range: {{ hoursBack }} hours</label>
+        <mat-slider 
+          class="time-slider"
+          min="1" 
+          max="168" 
+          step="1" 
+          [(ngModel)]="hoursBack">
+        </mat-slider>
+        <div class="slider-labels">
+          <span>1 hour</span>
+          <span>1 week</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-info">
+      <mat-icon class="info-icon">info</mat-icon>
+      <div class="info-text">
+        <strong>Preview:</strong> Will generate {{ count }} 
+        {{ severity ? severity.toLowerCase() : 'mixed severity' }} logs 
+        distributed over the last {{ hoursBack }} hours.
+      </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-button (click)="onCancel()" class="cancel-button">
+      <mat-icon>cancel</mat-icon>
+      Cancel
+    </button>
+    
+    <button 
+      mat-raised-button 
+      color="primary" 
+      (click)="onGenerate()" 
+      [disabled]="!isValid()"
+      class="generate-button">
+      <mat-icon>science</mat-icon>
+      Generate Logs
+    </button>
+  </mat-dialog-actions>
+</div>

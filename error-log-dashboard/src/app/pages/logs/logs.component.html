@@ -1,0 +1,38 @@
+<div class="logs-page">
+  <div class="page-header">
+    <div class="header-content">
+      <div class="header-text">
+        <h1 class="page-title">Error Logs</h1>
+        <p class="page-description">
+          View and filter error logs from your applications. Use the filters below to find specific logs.
+        </p>
+      </div>
+      <div class="header-actions">
+        <button 
+          mat-raised-button 
+          color="primary"
+          (click)="openExcelDownloadDialog()"
+          [disabled]="isLoading || isDownloading"
+          matTooltip="Download filtered logs as Excel">
+          <mat-icon>file_download</mat-icon>
+          Download Excel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <!-- Filter Component -->
+    <app-log-filter 
+      (filterChange)="onFilterChange($event)"
+      (clearFilters)="onClearFilters()">
+    </app-log-filter>
+
+    <!-- Log List Component -->
+    <app-log-list 
+      [logs]="filteredLogs"
+      [isLoading]="isLoading"
+      [error]="error">
+    </app-log-list>
+  </div>
+</div>

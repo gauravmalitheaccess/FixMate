@@ -1,0 +1,353 @@
+// Dashboard Toolbar
+.dashboard-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .toolbar-icon {
+    margin-right: 8px;
+  }
+
+  .toolbar-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+}
+
+// Loading State
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+  text-align: center;
+
+  .loading-text {
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+  }
+}
+
+// Error State
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+  text-align: center;
+
+  .error-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #f44336;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    margin: 0 0 8px 0;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  p {
+    margin: 0 0 24px 0;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+  }
+}
+
+// Dashboard Content
+.dashboard-content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .section-title {
+    margin: 0 0 16px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+// Statistics Section
+.statistics-section {
+  margin-bottom: 32px;
+
+  .statistics-grid {
+    margin-bottom: 16px;
+
+    .stat-card {
+      width: 100%;
+      height: 100%;
+      cursor: default;
+
+      mat-card-content {
+        padding: 16px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .stat-content {
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          .stat-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+
+            mat-icon {
+              color: white;
+              font-size: 24px;
+              width: 24px;
+              height: 24px;
+            }
+
+            &.total {
+              background-color: #2196f3;
+            }
+
+            &.critical {
+              background-color: #f44336;
+            }
+
+            &.high {
+              background-color: #ff9800;
+            }
+
+            &.analyzed {
+              background-color: #4caf50;
+            }
+          }
+
+          .stat-details {
+            .stat-number {
+              font-size: 2rem;
+              font-weight: 600;
+              line-height: 1;
+              color: rgba(0, 0, 0, 0.87);
+            }
+
+            .stat-label {
+              font-size: 0.875rem;
+              color: rgba(0, 0, 0, 0.6);
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Recent Logs Section
+.recent-logs-section {
+  .recent-logs-card {
+    mat-card-content {
+      padding: 0;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 48px 16px;
+
+      .empty-icon {
+        font-size: 64px;
+        width: 64px;
+        height: 64px;
+        color: rgba(0, 0, 0, 0.3);
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        margin: 0 0 8px 0;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      p {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .logs-list {
+      .log-item {
+        display: flex;
+        align-items: flex-start;
+        padding: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .log-priority {
+          margin-right: 16px;
+          padding-top: 4px;
+
+          .priority-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+          }
+        }
+
+        .log-content {
+          flex: 1;
+          min-width: 0;
+
+          .log-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+
+            .log-source {
+              font-weight: 500;
+              color: rgba(0, 0, 0, 0.87);
+            }
+
+            .log-timestamp {
+              font-size: 0.875rem;
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+
+          .log-message {
+            margin-bottom: 12px;
+            color: rgba(0, 0, 0, 0.87);
+            line-height: 1.4;
+            word-break: break-word;
+          }
+
+          .log-metadata {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            .severity-badge {
+              padding: 4px 8px;
+              border-radius: 12px;
+              font-size: 0.75rem;
+              font-weight: 500;
+              color: white;
+              text-transform: uppercase;
+            }
+
+            .analyzed-badge,
+            .unanalyzed-badge {
+              display: flex;
+              align-items: center;
+              padding: 4px 8px;
+              border-radius: 12px;
+              font-size: 0.75rem;
+              font-weight: 500;
+
+              .badge-icon {
+                font-size: 14px;
+                width: 14px;
+                height: 14px;
+                margin-right: 4px;
+              }
+            }
+
+            .analyzed-badge {
+              background-color: rgba(76, 175, 80, 0.1);
+              color: #4caf50;
+            }
+
+            .unanalyzed-badge {
+              background-color: rgba(255, 152, 0, 0.1);
+              color: #ff9800;
+            }
+          }
+        }
+
+        .log-actions {
+          margin-left: 16px;
+          padding-top: 4px;
+        }
+      }
+    }
+
+    .view-all-container {
+      padding: 16px;
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 16px;
+  }
+
+  .statistics-section {
+    .statistics-grid {
+      // Stack cards vertically on mobile
+      mat-grid-tile {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  .recent-logs-section {
+    .recent-logs-card {
+      .logs-list {
+        .log-item {
+          .log-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-toolbar {
+    .toolbar-title {
+      font-size: 1rem;
+    }
+  }
+
+  .statistics-section {
+    .statistics-grid {
+      mat-grid-tile {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+// Snackbar Styles
+:host ::ng-deep {
+  .error-snackbar {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .success-snackbar {
+    background-color: #4caf50;
+    color: white;
+  }
+}

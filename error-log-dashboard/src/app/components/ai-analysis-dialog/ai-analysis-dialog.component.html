@@ -1,0 +1,88 @@
+<div class="ai-analysis-dialog">
+  <h2 mat-dialog-title>
+    <mat-icon class="dialog-icon">psychology</mat-icon>
+    AI Exception Analysis
+  </h2>
+
+  <mat-dialog-content class="dialog-content">
+    <p class="dialog-description">
+      Paste your exception below for AI-powered analysis. The system will automatically extract the source, message, and provide intelligent severity, priority, and reasoning.
+    </p>
+
+    <!-- Quick Examples Section -->
+    <div class="examples-section" *ngIf="exampleStackTraces.length > 0">
+      <h3>Quick Examples</h3>
+      <div class="example-buttons">
+        <button 
+          *ngFor="let example of exampleStackTraces" 
+          mat-stroked-button 
+          class="example-button"
+          (click)="loadStackTraceExample(example.stackTrace)"
+          [disabled]="isAnalyzing">
+          {{ example.name }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Stack Trace Form -->
+    <form [formGroup]="stackTraceForm" class="exception-form">
+      
+      <div class="form-section">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Exception or Error</mat-label>
+          <textarea 
+            matInput 
+            formControlName="stackTrace" 
+            rows="12"
+            placeholder="Paste your complete exception or error here..."
+            [disabled]="isAnalyzing">
+          </textarea>
+          <mat-icon matSuffix>list</mat-icon>
+          <mat-error>{{ getFieldError('stackTrace') }}</mat-error>
+          <mat-hint>Paste the complete application logs or exception details</mat-hint>
+        </mat-form-field>
+      </div>
+
+    </form>
+
+    <!-- Analysis Info -->
+    <div class="analysis-info">
+      <mat-icon class="info-icon">lightbulb</mat-icon>
+      <div class="info-text">
+        <strong>AI Analysis will provide:</strong>
+        <ul>
+          <li>Severity classification (Critical, High, Medium, Low)</li>
+          <li>Priority assignment (High, Medium, Low)</li>
+          <li>Detailed reasoning and recommendations</li>
+          <li>Automatic categorization and tagging</li>
+        </ul>
+      </div>
+    </div>
+
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="dialog-actions">
+    <button 
+      mat-button 
+      (click)="onCancel()" 
+      [disabled]="isAnalyzing">
+      Cancel
+    </button>
+    
+    <button 
+      mat-raised-button 
+      color="primary" 
+      (click)="onAnalyze()" 
+      [disabled]="!stackTraceForm.valid || isAnalyzing"
+      [class.analyzing]="isAnalyzing">
+      <div class="button-content">
+        <mat-icon *ngIf="!isAnalyzing" class="analyze-icon">psychology</mat-icon>
+        <div *ngIf="isAnalyzing" class="simple-loading">
+          <mat-spinner diameter="20" class="loading-spinner"></mat-spinner>
+          <span class="loading-text">Analyzing...</span>
+        </div>
+        <span *ngIf="!isAnalyzing" class="button-text">Analyze with AI</span>
+      </div>
+    </button>
+  </mat-dialog-actions>
+</div>

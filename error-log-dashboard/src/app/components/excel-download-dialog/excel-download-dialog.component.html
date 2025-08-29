@@ -1,0 +1,120 @@
+<div class="excel-download-dialog">
+  <h2 mat-dialog-title>
+    <mat-icon>file_download</mat-icon>
+    Download Excel Report
+  </h2>
+
+  <mat-dialog-content>
+    <form [formGroup]="downloadForm" class="download-form">
+      
+      <!-- Quick Range Buttons -->
+      <div class="quick-ranges">
+        <h4>Quick Ranges:</h4>
+        <div class="range-buttons">
+          <button 
+            type="button" 
+            mat-stroked-button 
+            (click)="setQuickRange(1)"
+            class="range-button">
+            Today
+          </button>
+          <button 
+            type="button" 
+            mat-stroked-button 
+            (click)="setQuickRange(7)"
+            class="range-button">
+            Last 7 Days
+          </button>
+          <button 
+            type="button" 
+            mat-stroked-button 
+            (click)="setQuickRange(30)"
+            class="range-button">
+            Last 30 Days
+          </button>
+        </div>
+      </div>
+
+      <!-- Date Range Selection -->
+      <div class="date-range">
+        <mat-form-field appearance="outline" class="date-field">
+          <mat-label>From Date</mat-label>
+          <input 
+            matInput 
+            [matDatepicker]="fromPicker" 
+            formControlName="dateFrom"
+            [max]="maxDate"
+            readonly>
+          <mat-datepicker-toggle matIconSuffix [for]="fromPicker"></mat-datepicker-toggle>
+          <mat-datepicker #fromPicker></mat-datepicker>
+          <mat-error *ngIf="downloadForm.get('dateFrom')?.hasError('required')">
+            From date is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="date-field">
+          <mat-label>To Date</mat-label>
+          <input 
+            matInput 
+            [matDatepicker]="toPicker" 
+            formControlName="dateTo"
+            [max]="maxDate"
+            readonly>
+          <mat-datepicker-toggle matIconSuffix [for]="toPicker"></mat-datepicker-toggle>
+          <mat-datepicker #toPicker></mat-datepicker>
+          <mat-error *ngIf="downloadForm.get('dateTo')?.hasError('required')">
+            To date is required
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Date Range Error -->
+      <div *ngIf="getDateRangeError()" class="date-range-error">
+        <mat-icon>error</mat-icon>
+        {{ getDateRangeError() }}
+      </div>
+
+      <!-- Options -->
+      <div class="options">
+        <mat-checkbox formControlName="includeUnanalyzed">
+          Include unanalyzed logs
+        </mat-checkbox>
+      </div>
+
+      <!-- File Size Estimate -->
+      <div class="file-info">
+        <div class="info-item">
+          <mat-icon>info</mat-icon>
+          <span>Estimated file size: {{ getEstimatedFileSize() }}</span>
+        </div>
+      </div>
+
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button 
+      mat-button 
+      (click)="onCancel()"
+      [disabled]="isDownloading">
+      Cancel
+    </button>
+    
+    <button 
+      mat-raised-button 
+      color="primary"
+      (click)="onDownload()"
+      [disabled]="!downloadForm.valid || isDownloading">
+      
+      <mat-spinner 
+        *ngIf="isDownloading" 
+        diameter="20" 
+        class="download-spinner">
+      </mat-spinner>
+      
+      <mat-icon *ngIf="!isDownloading">file_download</mat-icon>
+      
+      {{ isDownloading ? 'Generating...' : 'Download Excel' }}
+    </button>
+  </mat-dialog-actions>
+</div>

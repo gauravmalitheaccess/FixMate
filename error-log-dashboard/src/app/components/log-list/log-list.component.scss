@@ -1,0 +1,569 @@
+.log-list-card {
+  .list-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    
+    mat-icon {
+      font-size: 22px;
+      width: 22px;
+      height: 22px;
+    }
+    
+    .log-counts {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+      
+      .count-chip {
+        font-size: 11px;
+        height: 24px;
+        padding: 0 8px;
+        
+        &.total {
+          background-color: #e3f2fd;
+          color: #1976d2;
+        }
+        
+        &.analyzed {
+          background-color: #e8f5e8;
+          color: #2e7d32;
+        }
+        
+        &.unanalyzed {
+          background-color: #fff3e0;
+          color: #f57c00;
+        }
+        &.grouped {
+          background-color: #f3e5f5;
+          color: #7b1fa2;
+        }
+      }
+    }
+  }
+
+  .card-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+
+    .grouping-toggle {
+      mat-icon {
+        margin-right: 8px;
+      }
+    }
+
+    .download-button {
+      .download-spinner {
+        margin-right: 8px;
+      }
+
+      mat-icon {
+        margin-right: 8px;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+// Loading, Error, and Empty States
+.loading-container,
+.error-container,
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+  
+  mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    
+    &.error-icon {
+      color: #f44336;
+    }
+    
+    &.empty-icon {
+      color: #9e9e9e;
+    }
+  }
+  
+  h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  p {
+    margin: 0;
+    color: #666;
+    
+    &.loading-text {
+      margin-top: 16px;
+    }
+  }
+}
+
+// Table Styles
+.table-container {
+  overflow-x: auto;
+  
+  .logs-table {
+    width: 100%;
+    min-width: 1360px;
+    table-layout: fixed;
+    
+    .mat-mdc-header-cell {
+      font-weight: 600;
+      color: #333;
+      border-bottom: 2px solid #e0e0e0;
+      padding: 12px 8px;
+      text-align: left;
+      vertical-align: middle;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+    
+    .mat-mdc-cell {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 12px 8px;
+      text-align: left;
+      vertical-align: middle;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    // Row styling
+    .log-row {
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: #f8f9fa;
+      }
+      
+      &.high-priority {
+        border-left: 4px solid #f44336;
+      }
+      
+      &.analyzed {
+        background-color: rgba(76, 175, 80, 0.02);
+      }
+    }
+    
+    // Column-specific styles with fixed widths
+    .mat-column-priority {
+      width: 100px;
+      min-width: 160px;
+      max-width: 100px;
+    }
+    
+    .mat-column-timestamp {
+      width: 140px;
+      min-width: 140px;
+      max-width: 140px;
+    }
+    
+    .mat-column-source {
+      width: 160px;
+      min-width: 160px;
+      max-width: 160px;
+    }
+    
+    .mat-column-message {
+      width: 280px;
+      min-width: 280px;
+      max-width: 280px;
+    }
+    
+    .mat-column-potentialFix {
+      width: 200px;
+      min-width: 200px;
+      max-width: 200px;
+    }
+    
+    .mat-column-severity {
+      width: 120px;
+      min-width: 120px;
+      max-width: 120px;
+    }
+    
+    .mat-column-status {
+      width: 140px;
+      min-width: 140px;
+      max-width: 140px;
+    }
+    
+    .mat-column-actions {
+      width: 160px;
+      min-width: 160px;
+      max-width: 160px;
+    }
+    
+    .timestamp-cell {
+      .timestamp-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        
+        .timestamp-date {
+          font-weight: 500;
+          font-size: 13px;
+        }
+        
+        .timestamp-time {
+          font-size: 11px;
+          color: #666;
+        }
+      }
+    }
+    
+    .source-cell {
+      .source-icon {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        vertical-align: middle;
+        color: #666;
+      }
+      
+      .source-text {
+        vertical-align: middle;
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+      }
+    }
+    
+    .message-cell {
+      .message-content {
+        font-size: 13px;
+        line-height: 1.4;
+        word-break: break-word;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    
+    .severity-chip {
+      font-size: 11px;
+      height: 24px;
+      font-weight: 500;
+      
+      mat-icon {
+        font-size: 14px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+    
+    .status-chip {
+      font-size: 11px;
+      height: 24px;
+      
+      &.analyzed {
+        background-color: #e8f5e8;
+        color: #2e7d32;
+      }
+      
+      &.pending {
+        background-color: #fff3e0;
+        color: #f57c00;
+      }
+      
+      mat-icon {
+        font-size: 14px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .status-cell {
+      .ai-status {
+        margin-bottom: 4px;
+      }
+      
+      .resolution-status {
+        .resolution-chip {
+          font-size: 11px;
+          height: 24px;
+          
+          &.pending {
+            background-color: #f5f5f5;
+            color: #666;
+            border: 1px solid #ddd;
+          }
+          
+          &.resolved {
+            background-color: #e8f5e8;
+            color: #2e7d32;
+            border: 1px solid #c8e6c9;
+          }
+
+          mat-icon {
+            font-size: 14px;
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+    
+    .actions-cell {
+      text-align: center;
+      
+      .action-button {
+        margin: 0 2px;
+        
+        &:hover:not(:disabled) {
+          background-color: rgba(0, 0, 0, 0.04);
+        }
+        
+        &:disabled {
+          opacity: 0.5;
+        }
+
+        &.resolve-button {
+          color: #2e7d32;
+          
+          &:hover {
+            background-color: rgba(46, 125, 50, 0.1);
+          }
+        }
+
+        &.more-options-button {
+          color: #666;
+          
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #333;
+          }
+        }
+      }
+    }
+
+    // Grouped table specific styles
+    &.grouped-table {
+      .group-row {
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+          background-color: #f8f9fa;
+        }
+        
+        &.high-priority {
+          border-left: 4px solid #d32f2f;
+        }
+      }
+
+      .expand-cell {
+        width: 48px;
+        text-align: center;
+      }
+
+      .pattern-cell {
+        max-width: 400px;
+        
+        .pattern-content {
+          font-size: 13px;
+          line-height: 1.4;
+          word-break: break-word;
+          font-family: 'Courier New', monospace;
+        }
+      }
+
+      .count-cell {
+        width: 100px;
+        
+        .count-chip-group {
+          background-color: #e3f2fd;
+          color: #1976d2;
+          font-size: 11px;
+          height: 24px;
+          
+          mat-icon {
+            font-size: 14px;
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+
+      .expanded-group-header {
+        background-color: #f5f5f5;
+        
+        .expanded-header-cell {
+          padding: 8px 16px;
+          border-bottom: 1px solid #e0e0e0;
+          
+          .expanded-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #666;
+            
+            mat-icon {
+              font-size: 16px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+
+      .expanded-log-row {
+        background-color: #fafafa;
+        
+        &:hover {
+          background-color: #f0f0f0;
+        }
+        
+        .expand-spacer {
+          width: 48px;
+          border-right: 1px solid #e0e0e0;
+        }
+        
+        .mat-mdc-cell {
+          padding: 8px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
+  .logs-paginator {
+    border-top: 1px solid #e0e0e0;
+    background-color: #fafafa;
+  }
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .log-list-card .list-title .log-counts {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container .logs-table {
+    .message-cell {
+      max-width: 200px;
+    }
+    
+    .timestamp-cell {
+      min-width: 100px;
+    }
+    
+    .source-cell {
+      min-width: 120px;
+    }
+  }
+  
+  .log-list-card .list-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    
+    .log-counts {
+      margin-left: 0;
+    }
+  }
+}
+
+// Potential Fix Column Styling
+.potential-fix-cell {
+  .potential-fix-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    
+    .fix-icon {
+      color: var(--warning-color, #ff9800);
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+    
+    .fix-text {
+      color: var(--text-secondary, #666);
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+// Tooltip styling
+:host ::ng-deep .message-tooltip {
+  max-width: 400px;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
+
+:host ::ng-deep .pattern-tooltip {
+  max-width: 500px;
+  white-space: pre-wrap;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+}
+
+:host ::ng-deep .potential-fix-tooltip {
+  max-width: 400px;
+  white-space: pre-wrap;
+  font-size: 12px;
+}
+
+// More Options Menu Styling
+:host ::ng-deep .more-options-menu {
+  .mat-mdc-menu-content {
+    padding: 8px 0;
+  }
+
+  .mat-mdc-menu-item {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 40px;
+
+    .mat-icon {
+      margin-right: 12px;
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+      color: #666;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .mat-divider {
+    margin: 8px 0;
+  }
+}

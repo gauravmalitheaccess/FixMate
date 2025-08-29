@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Log Generator</title>
+</head>
+<body>
+    <h1>Test Log Generator API</h1>
+    <button onclick="generateLogs()">Generate 5 High Severity Logs</button>
+    <div id="result"></div>
+
+    <script>
+        async function generateLogs() {
+            try {
+                const response = await fetch('http://localhost:5159/api/log/generate?count=5&severity=High&hoursBack=12', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                const result = await response.json();
+                document.getElementById('result').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('result').innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "date-test-20250824-9e1dfff1-b9d7-4c81-bf36-a1a22615f568",
+    "timestamp": "2025-08-24T09:00:00+05:30",
+    "source": "DateTest.Application",
+    "message": "Test error for 2025-08-24",
+    "stackTrace": "at TestMethod() line 1",
+    "severity": "Medium",
+    "priority": "",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  },
+  {
+    "id": "date-test-20250824-6e510f1d-e6ea-42aa-b864-59083f1129f5",
+    "timestamp": "2025-08-24T15:00:00+05:30",
+    "source": "DateTest.Service",
+    "message": "Another test error for 2025-08-24",
+    "stackTrace": "at ServiceMethod() line 2",
+    "severity": "Low",
+    "priority": "",
+    "aiReasoning": "",
+    "analyzedAt": null,
+    "isAnalyzed": false
+  }
+]
